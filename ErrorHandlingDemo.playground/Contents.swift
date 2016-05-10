@@ -52,13 +52,9 @@ func pancakes(fridge: Fridge) throws -> String  {
     }
 }
 
-
-
-
 //Examples of usage:
 
 var fridge = Fridge(milk: false, eggs: true)
-
 
 do {
    var resultsOfCooking = try scrambledEggs(fridge)
@@ -72,15 +68,14 @@ do {
     print("something else..")
 }
 
-
 //Example of not using do-catch block but forcing the call
 
 //I'm sure eggs are in the fridge
+
 let breakfast = try! scrambledEggs(fridge)
 
-
-
 //One more example with empty fridge
+
 fridge.milk = false
 fridge.eggs = false
 
@@ -95,6 +90,3 @@ do {
 }  catch {
     print("something else..")
 }
-
-
-
