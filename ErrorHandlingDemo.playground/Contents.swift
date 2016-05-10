@@ -91,7 +91,8 @@ do {
     print("something else..")
 }
 
-//Another example with using only two catch block, but fulfilling all cases
+//Another example with using only two catch blocks, but fulfilling all cases
+
 do {
     try pancakes(fridge)
 } catch let error as BreakfastErrors {
