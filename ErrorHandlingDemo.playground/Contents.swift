@@ -90,3 +90,19 @@ do {
 }  catch {
     print("something else..")
 }
+
+//Another example with using only two catch block, but fulfilling all cases
+do {
+    try pancakes(fridge)
+} catch let error as BreakfastErrors {
+    switch error {
+    case .emptyFridge:
+        print("fill the fridge")
+    case .noEggs:
+        print("go and buy some eggs")
+    case .noMilk:
+        print("go and buy some milk")
+    }
+} catch {
+    print("something else")
+}
